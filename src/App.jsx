@@ -851,8 +851,8 @@ const FutureFest2025 = () => {
 
           <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm animate-fadeInUp delay-800">
             <p>
-              © 2025 Future Fest. All rights reserved. Organized by Tech
-              Innovation Nepal.
+              © 2025 Future Fest. All rights reserved. Organized by Open Tech
+              Communtiy.
             </p>
           </div>
         </div>
