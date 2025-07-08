@@ -395,10 +395,26 @@ const FutureFest2025 = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slideUp delay-1000">
-            <button className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-full font-semibold hover:from-cyan-600 hover:to-purple-600 transition-all transform hover:scale-105 hover:shadow-lg animate-pulse">
-              Register Now
+            <button
+              onClick={() => {
+                window.location.href = "https://bit.ly/future-fest-participate";
+              }}
+              className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-full font-semibold hover:from-cyan-600 hover:to-purple-600 transition-all transform hover:scale-105 hover:shadow-lg animate-pulse"
+            >
+              Sign Up
             </button>
             <button
+              onClick={() => {
+                window.location.href = "https://bit.ly/future-fest-bootcamp";
+              }}
+              className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-full font-semibold hover:from-cyan-600 hover:to-purple-600 transition-all transform hover:scale-105 hover:shadow-lg animate-pulse"
+            >
+              Register For Bootcamp
+            </button>
+            <button
+              onClick={() => {
+                window.location.href = "#schedule";
+              }}
               className={`px-8 py-3 border-2 border-cyan-500 rounded-full font-semibold hover:bg-cyan-500 hover:text-white transition-all transform hover:scale-105 ${themeClasses.text}`}
             >
               View Schedule

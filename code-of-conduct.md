@@ -98,8 +98,8 @@ Anyone found violating this Code of Conduct may face consequences such as:
 
 To report an issue or ask questions, please contact:
 
-📞 **On-site Contact:** [Name & Number of Organizer]
-📧 **Email:** [Insert official contact email]
+📞 **On-site Contact:** +977-9849826321
+📧 **Email:** info@corpolatech.com
 
 ----------
 
