@@ -18,6 +18,8 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import Logo from "./assets/logo.png";
+import LogoWhite from "./assets/logo_white.png";
 
 const FutureFest2025 = () => {
   const [activeDay, setActiveDay] = useState("day1");
@@ -35,7 +37,7 @@ const FutureFest2025 = () => {
 
   const scheduleData = {
     day1: {
-      title: "Innovation Day",
+      title: "Day 1 : Innovation Day",
       date: "August 15, Friday",
       events: [
         {
@@ -66,7 +68,7 @@ const FutureFest2025 = () => {
       ],
     },
     day2: {
-      title: "Career Development Day",
+      title: "Day 2: Career Development Day",
       date: "August 16, Saturday",
       events: [
         {
@@ -97,7 +99,7 @@ const FutureFest2025 = () => {
       ],
     },
     day3: {
-      title: "Future Technology Day",
+      title: "Day 3: Future Technology Day",
       date: "August 17, Sunday",
       events: [
         {
@@ -238,12 +240,11 @@ const FutureFest2025 = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2 animate-pulse">
-              <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center transform rotate-12 hover:rotate-0 transition-transform duration-300">
-                <Rocket className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent">
-                Future Fest 2025
-              </span>
+              {darkMode ? (
+                <img src={LogoWhite} style={{ height: 70, margin: 10 }} />
+              ) : (
+                <img src={Logo} style={{ height: 70, margin: 10 }} />
+              )}
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
