@@ -28,6 +28,7 @@ import PE5 from "./assets/past_events/5.jpg";
 import PE6 from "./assets/past_events/6.jpg";
 import PE7 from "./assets/past_events/7.jpg";
 import PE8 from "./assets/past_events/8.jpg";
+import CoverImg from "./assets/cover.jpg";
 
 const FutureFest2025 = () => {
   const [activeDay, setActiveDay] = useState("day1");
@@ -409,7 +410,7 @@ const FutureFest2025 = () => {
               }}
               className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-full font-semibold hover:from-cyan-600 hover:to-purple-600 transition-all transform hover:scale-105 hover:shadow-lg animate-pulse"
             >
-              Sign Up
+              Join Future Fest
             </button>
             <button
               onClick={() => {
@@ -492,7 +493,13 @@ const FutureFest2025 = () => {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-            <div className="aspect-video bg-gradient-to-br from-cyan-500 via-purple-500 to-pink-500 flex items-center justify-center">
+            <div
+              style={{
+                backgroundImage: `url("${CoverImg}")`,
+                backgroundSize: "contain",
+              }}
+              className="aspect-video bg-gradient-to-br from-cyan-500 via-purple-500 to-pink-500 flex items-center justify-center"
+            >
               <div className="text-center animate-float">
                 <Rocket className="w-32 h-32 mx-auto mb-6 text-white opacity-80 group-hover:animate-bounce" />
                 <h3 className="text-3xl font-bold text-white mb-2">
@@ -798,10 +805,7 @@ const FutureFest2025 = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="animate-fadeInUp">
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center animate-pulse">
-                  <Rocket className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-xl font-bold">Future Fest 2025</span>
+                <img src={LogoWhite} style={{ height: 80 }} />
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Your Blueprint For Tomorrow
