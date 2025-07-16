@@ -20,6 +20,14 @@ import {
 } from "lucide-react";
 import Logo from "./assets/logo.png";
 import LogoWhite from "./assets/logo_white.png";
+import PE1 from "./assets/past_events/1.jpg";
+import PE2 from "./assets/past_events/2.jpg";
+import PE3 from "./assets/past_events/3.jpg";
+import PE4 from "./assets/past_events/4.jpg";
+import PE5 from "./assets/past_events/5.jpg";
+import PE6 from "./assets/past_events/6.jpg";
+import PE7 from "./assets/past_events/7.jpg";
+import PE8 from "./assets/past_events/8.jpg";
 
 const FutureFest2025 = () => {
   const [activeDay, setActiveDay] = useState("day1");
@@ -166,28 +174,28 @@ const FutureFest2025 = () => {
 
   const workshops = [
     {
-      title: "AI Bootcamp",
+      title: "Data & AI Bootcamp",
       duration: "3 Days",
-      prize: "₹50,000",
+      prize: "रू 10,000",
       description:
-        "Intensive hands-on training in machine learning and AI development",
+        "Intensive hands-on training in data, machine learning and AI development",
       color: "from-purple-500 to-blue-500",
     },
-    {
-      title: "Blockchain Workshop",
-      duration: "2 Days",
-      prize: "₹30,000",
-      description:
-        "Learn decentralized application development and smart contracts",
-      color: "from-green-500 to-teal-500",
-    },
-    {
-      title: "Startup Accelerator",
-      duration: "3 Days",
-      prize: "₹1,00,000",
-      description: "Turn your innovative ideas into viable business models",
-      color: "from-orange-500 to-pink-500",
-    },
+    // {
+    //   title: "Blockchain Workshop",
+    //   duration: "2 Days",
+    //   prize: "रू30,000",
+    //   description:
+    //     "Learn decentralized application development and smart contracts",
+    //   color: "from-green-500 to-teal-500",
+    // },
+    // {
+    //   title: "Startup Accelerator",
+    //   duration: "3 Days",
+    //   prize: "रू1,00,000",
+    //   description: "Turn your innovative ideas into viable business models",
+    //   color: "from-orange-500 to-pink-500",
+    // },
   ];
 
   const partners = [
@@ -377,7 +385,7 @@ const FutureFest2025 = () => {
             <div className="flex items-center gap-2 group">
               <MapPin className="w-5 h-5 text-cyan-500 group-hover:animate-bounce" />
               <span className={themeClasses.textSecondary}>
-                Trade Tower, Kathmandu
+                Taj Banquet, Kathmandu
               </span>
             </div>
             <div className="flex items-center gap-2 group">
@@ -603,7 +611,7 @@ const FutureFest2025 = () => {
             Bootcamp Workshops & Prizes
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-24 gap-8">
             {workshops.map((workshop, index) => (
               <div
                 key={index}
@@ -692,11 +700,24 @@ const FutureFest2025 = () => {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+            {[
+              { id: 1, img: PE1 },
+              { id: 2, img: PE2 },
+              { id: 3, img: PE3 },
+              { id: 4, img: PE4 },
+              { id: 5, img: PE5 },
+              { id: 6, img: PE6 },
+              { id: 7, img: PE7 },
+              { id: 8, img: PE8 },
+            ].map((item) => (
               <div
-                key={item}
+                key={item.id}
                 className={`group aspect-square bg-gradient-to-br ${item % 3 === 0 ? "from-purple-500 to-pink-500" : item % 2 === 0 ? "from-cyan-500 to-blue-500" : "from-green-500 to-teal-500"} rounded-2xl flex items-center justify-center hover:scale-105 transition-all duration-300 animate-slideUp`}
-                style={{ animationDelay: `${item * 0.1}s` }}
+                style={{
+                  animationDelay: `${item.id * 0.1}s`,
+                  backgroundImage: `url("${item.img}")`,
+                  backgroundSize: "cover",
+                }}
               >
                 <Star className="w-8 h-8 text-white opacity-70 group-hover:opacity-100 group-hover:rotate-12 transition-all" />
               </div>

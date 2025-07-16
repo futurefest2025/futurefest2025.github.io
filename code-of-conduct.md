@@ -5,7 +5,7 @@
 
 At Future Fest, we are committed to providing a welcoming, inclusive, and safe environment for everyone participating in our bootcamp. This Code of Conduct outlines our expectations for behavior and the consequences for unacceptable behavior.
 
-By attending the bootcamp at Trade Tower, Kathmandu, all participants—including attendees, mentors, speakers, sponsors, organizers, and volunteers—agree to abide by this Code of Conduct.
+By attending the bootcamp at Taj Banquet, Kathmandu, all participants—including attendees, mentors, speakers, sponsors, organizers, and volunteers—agree to abide by this Code of Conduct.
 
 ----------
 
